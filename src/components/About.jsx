@@ -14,7 +14,7 @@ export default function About() {
           </div>
 
           <div className="col-span-2 flex justify-end ">
-            <img src={image3} alt="Mon Ami Gabi" className=" max-w-[85%]  " />
+            <img src={image3} alt="Mon Ami Gabi" className=" max-w-[85%]"  />
           </div>
         </div>
 

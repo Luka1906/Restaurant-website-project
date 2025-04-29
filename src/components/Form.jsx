@@ -1,11 +1,11 @@
 import salmonImage from "../assets/MAG-Salmon_Anjali Pinto.jpg";
-import Input from "./Input";
-import Button from "./Button";
+import Input from "./UI/Input";
+import Button from "./UI/Button";
 
 export default function Form() {
   return (
     <section>
-      <div className="bg-text-primary-light grid grid-cols-3 ">
+      <div className="bg-text-primary-light grid grid-cols-3">
         <div className="flex justify-end">
           <div className="flex flex-col m-auto justify-center px-12 gap-3  ">
             <h1 className="font-accent text-2xl  text-center">
@@ -19,9 +19,8 @@ export default function Form() {
             </form>
           </div>
         </div>
-      
-          <img src={salmonImage} className="col-span-2 " alt="" />
-   
+
+        <img src={salmonImage} className="col-span-2 " alt="" />
       </div>
     </section>
   );

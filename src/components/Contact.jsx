@@ -5,13 +5,13 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function Contact() {
   return (
     <section>
-      <div className="bg-primary-dark grid grid-cols-2 text-text-primary-light font-extralight pt-10">
-        <div className="w-96">
-          <img src={cheeseImage} className="  " alt="Cheese plate" />
+      <div className="bg-primary-dark grid grid-cols-2 text-text-primary-light font-extralight ">
+        <div className="">
+          <img src={cheeseImage} className=" relative right-18" alt="Cheese plate" />
         </div>
-        <div className=" flex flex-col gap-4  m-auto w-auto">
+        <div className=" flex flex-col gap-4  m-auto w-auto py-10">
           <div>
-            <h1 className="font-accent text-2xl fo">Mon Ami Gabi Chicago</h1>
+            <h1 className="font-accent text-2xl ">Mon Ami Gabi Chicago</h1>
             <em>
               <p className="text-xs">CHANGE LOCATION</p>
             </em>

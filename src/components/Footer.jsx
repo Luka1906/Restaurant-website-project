@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-text-accent  text-text-primary-light text-sm just ">
+    <footer className="bg-text-accent  text-text-primary-light text-sm  ">
       <ul className="flex justify-around py-2">
         <li>Frequent Diner</li>
         <li>Gift Cards</li>

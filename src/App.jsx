@@ -4,6 +4,7 @@ import About from "./components/About";
 import Form from "./components/Form";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Events from "./components/Events";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <Header />
       <About />
       <Form />
+      <Events />
       <Contact />
+
       <Footer />
     </>
   );
