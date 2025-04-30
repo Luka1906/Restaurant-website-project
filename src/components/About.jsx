@@ -5,7 +5,7 @@ import image3 from "../assets/MAG-382.jpg";
 export default function About() {
   return (
     <main>
-      <div className="flex flex-col-reverse gap-10 text-base md:text-sm lg:text-base lg:gap-0 md:grid md:grid-cols-2 px-12 py-20 ">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 text-base md:text-sm lg:text-base lg:gap-0  px-12 py-20 ">
         {/* Image Section */}
 
         <figure className="grid grid-cols-2 gap-6 items-end">

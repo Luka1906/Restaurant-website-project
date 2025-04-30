@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-export default function ReadMore({ text, maxWords = 35,  }) {
+export default function ReadMore({ text, maxWords = 35 }) {
+  
+  // Component to toggle between truncated and full text display, with a "Read More" / "Show Less" button
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const words = text.split(" ");

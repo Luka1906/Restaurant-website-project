@@ -10,7 +10,7 @@ export default function Contact() {
           <img
             src={cheeseImage}
             className="w-2/3 md:w-full md:max-w-md "
-            alt="Cheese plate"
+            alt="Wooden plate with cheese and fruit"
           />
         </div>
         <div className=" m-auto w-auto py-20">

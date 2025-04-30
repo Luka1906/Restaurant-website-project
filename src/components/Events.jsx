@@ -4,14 +4,14 @@ import Button from "./UI/Button";
 
 // Helper Functions
 {
-  /* Returning array with the unique city names*/
+  // Function that returns an array of unique city names
 }
 const eventsCitiesArray = (events) => {
   const uniqueCities = [...new Set(events.flatMap((event) => event.cities))];
   return uniqueCities;
 };
 {
-  /* Function for formatting APIs date property */
+  // Function for formatting the date property returned from the API
 }
 const cleanDate = (dateStr) => {
   return dateStr
@@ -20,10 +20,7 @@ const cleanDate = (dateStr) => {
     .replace("rd", "")
     .replace("th", "");
 };
-
-{
-  /* Function for filtering event based on date (date in the past or no date)*/
-}
+// Function for filtering out events with past dates and pushing undated events to the end
 
 const getUpcomingEvents = (events) => {
   const now = new Date();
@@ -46,9 +43,7 @@ const getUpcomingEvents = (events) => {
   return [...withDates, ...withoutDates];
 };
 
-{
-  /* Function for filtering bases on the city name */
-}
+// Function for filtering based on the selected city name
 
 const filterEventsByCity = (events, city) => {
   if (city !== "All") {
@@ -69,6 +64,8 @@ export default function Events() {
   const eventsURL =
     "https://abarestaurants-staging-401581158498.us-central1.run.app/wp-json/lettuce/events";
 
+  // Fetching event data from the API
+
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -86,6 +83,8 @@ export default function Events() {
     };
     fetchEvents();
   }, []);
+
+  
 
   const handleClickFiltering = (city) => {
     setSelectedCity(city);
@@ -108,9 +107,7 @@ export default function Events() {
             <Button
               value={city}
               className={`px-9 py-1.5 rounded-md cursor-pointer hover:bg-text-bold ${
-                selectedCity === city
-                  ? "bg-text-bold"
-                  : ""
+                selectedCity === city ? "bg-text-bold" : ""
               }`}
               key={index}
               onClick={() => handleClickFiltering(city)}
@@ -122,9 +119,7 @@ export default function Events() {
 
       {/* Loading Message */}
       {loading && (
-        <p className="text-center text-gray-500 py-12 ">
-          Loading...
-        </p>
+        <p className="text-center text-gray-500 py-12 ">Loading...</p>
       )}
 
       {/* Error Message */}

@@ -10,9 +10,11 @@ export default function Form() {
 
   const [error, setError] = useState(false);
 
+// Handle form validation, empty input fields, and console.log success submit message
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    
     const peopleNumber = peopleNumberRef.current.value.trim();
     const date = dateRef.current.value.trim();
     const time = timeRef.current.value.trim();
@@ -63,7 +65,11 @@ export default function Form() {
           </div>
         </div>
 
-        <img src={salmonImage} className="md:col-span-2 " alt="" />
+        <img
+          src={salmonImage}
+          className="md:col-span-2 "
+          alt="Baked salmon in the plate"
+        />
       </div>
     </section>
   );
