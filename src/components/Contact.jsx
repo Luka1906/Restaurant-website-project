@@ -13,7 +13,7 @@ export default function Contact() {
             alt="Wooden plate with cheese and fruit"
           />
         </div>
-        <div className=" m-auto w-auto py-20">
+        <div className=" m-auto w-auto px-10">
           <div>
             <h1 className="font-accent text-2xl ">Mon Ami Gabi Chicago</h1>
             <em>
