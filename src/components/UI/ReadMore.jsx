@@ -20,7 +20,7 @@ export default function ReadMore({ text, maxWords = 35,  }) {
       {words.length > maxWords && (
         <button
           onClick={toggleReadMore}
-          className="mt-2 text-text-bold font-light hover:underline focus:outline-none "
+          className="mt-2 text-text-bold font-light hover:underline cursor-pointer "
         >
           {isExpanded ? "Show Less" : "Read More"}
         </button>

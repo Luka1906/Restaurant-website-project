@@ -5,23 +5,27 @@ import image3 from "../assets/MAG-382.jpg";
 export default function About() {
   return (
     <main>
-      <div className="grid grid-cols-2 py-12 px-15 items-center ">
+      <div className="flex flex-col-reverse gap-10 text-base md:text-sm lg:text-base lg:gap-0 md:grid md:grid-cols-2 px-12 py-20 ">
         {/* Image Section */}
-        <div className="grid grid-cols-2 gap-6 items-end">
-          <img src={image1} alt="Farmers market image" />
-          <div>
-            <img src={image2} alt="Mushroom pasta" />
-          </div>
+
+        <figure className="grid grid-cols-2 gap-6 items-end">
+          <img src={image1} alt="Cherry tomatoes on the table" className="transition-transform duration-300 hover:scale-[1.02]" />
+
+          <img src={image2} alt="Mushroom pasta with parmesan in the plate" className="transition-transform duration-300 hover:scale-[1.02]" />
 
           <div className="col-span-2 flex justify-end ">
-            <img src={image3} alt="Mon Ami Gabi" className=" max-w-[85%]"  />
+            <img
+              src={image3}
+              alt="Dinner at Mon Ami Gabi restaurant"
+              className=" max-w-[85%] transition-transform duration-300 hover:scale-[1.02]"
+            />
           </div>
-        </div>
+        </figure>
 
         {/* About Section */}
 
-        <div className="m-auto w-3/5 text-justify ">
-          <h1 className="text-2xl font-accent text-text-accent font-bold">
+        <div className="m-auto lg:w-3/5 text-justify md:px-0 ">
+          <h1 className="text-xl lg:text-2xl font-accent text-text-accent font-bold">
             About
           </h1>
           <p className="leading-relaxed mt-4">

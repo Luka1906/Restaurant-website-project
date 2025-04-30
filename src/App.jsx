@@ -12,9 +12,9 @@ function App() {
       <Header />
       <About />
       <Form />
-      <Events />
+      <Events/>
       <Contact />
-
+   
       <Footer />
     </>
   );

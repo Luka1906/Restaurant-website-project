@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-text-accent  text-text-primary-light text-sm  ">
-      <ul className="flex justify-around py-2">
+      <ul className="flex flex-wrap justify-around p-2 gap-2">
         <li>Frequent Diner</li>
         <li>Gift Cards</li>
         <li>Employment</li>

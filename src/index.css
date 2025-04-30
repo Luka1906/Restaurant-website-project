@@ -4,6 +4,8 @@
 @import "tailwindcss";
 
 @theme {
+  /* Custom colors */
+
   --color-primary-dark: #2f3b44;
   --color-text-accent: #3b3b3c;
   --color-text-primary-light: #eaeaea;
@@ -11,9 +13,37 @@
   --color-border-accent: #98c4ba;
   --color-bg-primary-light: #ffffff;
 
+  /* Custom font */
+
   --font-primary: "Outfit";
-  --font-accent: "Baskervville"
+  --font-accent: "Baskervville";
 
+  /* Custom breakpoints */
 
+  --breakpoint-custom-md: 40rem;
+  --breakpoint-xs: 25rem;
+
+  --animate-slideFadeInRight: slideFadeInRight 0.35s ease-in-out;
+  --animate-slideFadeOutRight: slideFadeOutRight 0.35s ease-in-out;
+
+  @keyframes slideFadeInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideFadeOutRight {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
 }
-
