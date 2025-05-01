@@ -23,7 +23,7 @@ export default function About() {
             <img
               src={image3}
               alt="Dinner at Mon Ami Gabi restaurant"
-              className="w-full md:max-w-[85%] transition-transform duration-300 hover:scale-[1.02]"
+              className="w-full sm:max-w-[85%] transition-transform duration-300 hover:scale-[1.02]"
             />
           </div>
         </figure>
