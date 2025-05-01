@@ -8,16 +8,22 @@ export default function About() {
       <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 text-base md:text-sm lg:text-base lg:gap-0  px-12 py-20 ">
         {/* Image Section */}
 
-        <figure className="grid grid-cols-2 gap-6 items-end">
-          <img src={image1} alt="Cherry tomatoes on the table" className="transition-transform duration-300 hover:scale-[1.02]" />
-
-          <img src={image2} alt="Mushroom pasta with parmesan in the plate" className="transition-transform duration-300 hover:scale-[1.02]" />
-
-          <div className="col-span-2 flex justify-end ">
+        <figure className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-end">
+          <img
+            src={image1}
+            alt="Cherry tomatoes on the table"
+            className="w-full transition-transform duration-300 hover:scale-[1.02]"
+          />
+          <img
+            src={image2}
+            alt="Mushroom pasta with parmesan in the plate"
+            className="w-full transition-transform duration-300 hover:scale-[1.02]"
+          />
+          <div className="sm:col-span-2 flex justify-center sm:justify-end mt-4 sm:mt-0">
             <img
               src={image3}
               alt="Dinner at Mon Ami Gabi restaurant"
-              className=" max-w-[85%] transition-transform duration-300 hover:scale-[1.02]"
+              className="w-full md:max-w-[85%] transition-transform duration-300 hover:scale-[1.02]"
             />
           </div>
         </figure>
